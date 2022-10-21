@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.username,
+.password {
+    margin: 1rem;
+    width: 12.5%;
+}
+
+.login {
+    margin: .25rem 0 0 0;
+    width: 12.5%;
+}

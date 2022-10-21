@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --light-brown: #CEC39B;
+    --dark-brown: #B2A163;
+    --forest-green: #4A3B03;
+    --gray: #737373;
+    --light-gray: #E6E6E6;
+    --card-top-bottom-padding: 4rem;
+}
+
+* {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; */
+}
+
+body {
+    background: var(--light-gray);
+}
+
+/* Navbar */
+.nav-container {
+    background: var(--light-gray);
+    z-index: 10;
+    padding: 1rem;
+    width: 100vw;
+    position: fixed;
+}
+
+.nav {
+    list-style: none;
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+.nav-item {
+    width: 100px;
+    font-weight: 400;
+}
+
+.title {
+    position: absolute;
+    left: 4rem;
+    font-weight: 600;
+}
+
+.nav-item a,
+.title a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item a:hover,
+.title a:hover {
+    border-bottom: 1.25px solid black;
+}
+
+/* Home Introduction */
+.home-introduction {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark-brown);
+}
+
+.home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.home-text {
+    width: 35%;
+    margin-right: 10%;
+}
+
+.home-title {
+    font-weight: 300;
+    font-size: 4rem;
+}
+
+.home-subtitle {
+    font-weight: 200;
+    font-size: 2.5rem;
+    margin: 0rem 0 .5rem 0;
+    width: max-content;
+}
+
+.home-content {
+    font-weight: 300;
+    font-size: 1.25rem;
+    width: 570px;
+    text-align: justify;
+}
+
+.home-logo {
+    width: 27%;
+    padding: 1rem 0 0 3rem;
+}
+
+/* About Me */
+.about-me {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light-gray);
+}
+
+.about-me-heading {
+    /* background: red; */
+    height: 40%;
+}
+
+.about-me-title {
+    font-weight: 300;
+    font-size: 4rem;
+    display: inline-block;
+    /* background-color: blue; */
+    margin: 4rem;
+}
+
+.about-me-title aside {
+    font-weight: 600;
+    color: var(--dark-brown);
+    display: inline-block;
+}
+
+.about-me-content {
+    font-weight: 200;
+    font-size: 1.625rem;
+    display: inline-block;
+    text-align: justify;
+    width: 30%;
+    position: absolute;
+    right: 0;
+    margin: 4rem;
+}
+
+.divider {
+    width: 92.5%;
+    margin-left: 3.75%;
+    height: 1px;
+    border-bottom: 1px solid var(--dark-brown);
+}
+
+.about-me-section {
+    /* background-color: red; */
+    width: 100%;
+    height: 60%;
+}
+
+.fa-lightbulb,
+.fa-comment-dots {
+    font-size: 2.625rem;
+    font-weight: 400;
+    margin-right: 2rem;
+}
+
+.fa-comment-dots {
+    margin-right: 1rem;
+}
+
+.problem-solver-title {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 2.625rem;
+}
+
+.problem-solver-content {
+    margin-left: 4.2rem;
+    font-weight: 200;
+    font-size: 1.75rem;
+    width: 60%;
+    text-align: justify;
+    padding-top: .5rem;
+}
+
+.about-skill-1 {
+    padding: 3.5rem 0 5rem 0;
+}
+
+.about-me-skill {
+    padding-left: 4rem;
+    width: 50%;
+    position: relative;
+}
+
+.skill-graph {
+    width: 46vw;
+    position: absolute;
+    left: 100%;
+    bottom: 1vh;
+}
+
+.skill-graph-title {
+    font-weight: 300;
+    font-size: 2.25rem;
+    padding-bottom: 1rem;
+}
+
+.skill-graph-line {
+    width: 85%;
+    background: black;
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 4rem;
+}
+
+.skill-graph-line-value {
+    background: var(--dark-brown);
+    height: 100%;
+    border-radius: 4px 0 0 4px;
+}
+
+.js {
+    width: 95%;
+}
+
+.html {
+    width: 85%;
+}
+
+.css {
+    width: 70%;
+}
+
+/* Services */
+
+.my-services {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark-brown);
+}
+
+.my-services-title {
+    font-weight: 300;
+    font-size: 4rem;
+    margin: 1.5rem 0 0 3rem;
+}
+
+.my-services-subtitle {
+    font-weight: 600;
+    font-size: 1.375rem;
+    margin: 0 0 0 3rem;
+    padding-top: 3rem;
+    text-transform: uppercase;
+}
+
+.my-services-subtitle span {
+    color: var(--forest-green);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    width: calc(100% - 6rem);
+    margin-left: 3rem;
+}
+
+.card {
+    width: calc(100% - 6rem);
+    height: 55vh;
+    background: var(--light-brown);
+    padding: 1rem;
+    border-radius: 14px;
+    transition: 750ms;
+}
+
+.card:hover {
+    transition: 1s;
+    scale: 1.05;
+}
+
+.card i {
+    width: 100%;
+    font-size: 5rem;
+    color: var(--gray);
+    text-align: center;
+    margin: var(--card-top-bottom-padding) 0 1.5rem 0;
+}
+
+.card h4 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.875rem;
+}
+
+.card p {
+    font-weight: 200;
+    font-size: 1.6875rem;
+    width: 75%;
+    text-align: center;
+    margin: 2rem 0 var(--card-top-bottom-padding) 12.5%;
+}
+
+/* Testimonials */
+
+.testimonials {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light-gray);
+}
+
+.testimonials-wrapper {
+    height: 90%;
+    width: 90%;
+    position: relative;
+    top: 5%;
+    left: 5%;
+}
+
+.testimonials-title {
+    color: var(--dark-brown);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    margin-bottom: 6vh;
+}
+
+.testimonials-card {
+    background: #D9D9D9;
+    width: 28.5%;
+    height: 75%;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.25);
+    position: relative;
+}
+
+.testimonials-card i {
+    font-size: 5rem;
+    padding: 0 0 1rem 5%;
+    width: 90%;
+}
+
+.testimonials-card p {
+    text-align: center;
+    height: 33%;
+    width: 90%;
+    margin-left: 5%;
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: var(--gray);
+}
+
+.testimonials-card-2 {
+    margin: 0 2.4rem 0 2.4rem;
+}
+
+.testimonials-card svg {
+    width: 100%;
+    margin-left: -1rem;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 15px 15px;
+    z-index: 0;
+}
+
+.testimonials-card-1 svg path {fill: var(--forest-green);}
+.testimonials-card-2 svg path {fill: var(--gray);}
+.testimonials-card-3 svg path {fill: var(--dark-brown);}
+
+.testimonials-card img {
+    z-index: 1;
+    position: absolute;
+    left: 22.5%
+}
+
+.testimonials-card h5 {
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+/* Contact Form */
+
+.contact-me {
+    width: 100%;
+    height: 80vh;
+    background: var(--dark-brown);
+    border-radius: 15px 15px 0 0;
+    padding: 3rem;
+}
+
+.contact-me-title {
+    color: white;
+    font-weight: 500;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.contact-me-form input,
+.contact-me-form textarea {
+    background: #fff;
+    opacity: 0.33;
+    border: none;
+    height: 4rem;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.65);
+    padding-left: 1rem;
+    font-weight: 200;
+    font-size: 1rem; 
+}
+
+.contact-me-form input::placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-name,
+.contact-email {
+    display: inline-block;
+    width: 44.15%;
+}
+
+.contact-subject,
+.contact-message {
+    width: calc(100% - 6rem);
+}
+
+.contact-name {
+    margin-right: 3rem;
+}
+
+.contact-subject {
+    display: block;
+    margin: 1rem 0 1rem 0;
+}
+
+.contact-message {
+    height: 16rem !important;
+    position: relative;
+    padding-top: 1.4rem;
+    margin-bottom: 0;
+}
+
+.contact-message::placeholder {
+    position: absolute;
+    top: 1.4rem;
+}
+
+.send {
+    display: block;
+    height: 4rem;
+    width: 25%;
+    border-radius: 10px;
+    border: 2px solid var(--light-gray);
+    background-color: transparent;
+    color: var(--light-gray);
+    font-weight: 300;
+    font-size: 1.25rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+    transition: 500ms;
+}
+
+.send svg {
+    height: 2rem;
+    width: 2rem;
+    padding-right: 1rem;
+}
+
+.send svg path {
+    fill: var(--light-gray);
+    transition: 500ms;
+}
+
+.send:hover,
+.send svg path:hover {
+    fill: white;
+    color: white;
+    border: none;
+    background-color: var(--forest-green);
+    transition: 500ms;
+}
+
+.banner-success {
+    position: fixed;
+    z-index: 9;
+    top: 5rem;
+    left: calc(42.5% - 2rem);
+    background: rgb(117, 189, 117);
+    border: 1px solid green;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 15%;
+    display: none;
+    animation: fadeFromBottom 1.75s forwards;
+}
+
+.banner-unsuccessful {
+    position: fixed;
+    z-index: 9;
+    top: 5rem;
+    left: calc(42.5% - 2rem);
+    background: rgb(211, 123, 123);
+    border: 1px solid red;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 15%;
+    display: none;
+    animation: fadeFromBottom 1.75s forwards;
+}
+
+@keyframes fadeFromTop {
+    100% {
+        transform: translateY(-100px);
+    }
+
+    0% {
+        transform: translateY(0px)
+    }
+}
+
+@keyframes fadeFromBottom {
+    100% {
+        transform: translateY(0);
+    }
+
+    0% {
+        transform: translateY(-100px)
+    }
+}
