@@ -64,6 +64,15 @@ const hamburger = document.querySelector('.mobile-nav-menu-span');
 const navigation = document.querySelector('.nav-container');
 const navItem = document.querySelectorAll('.nav-item');
 
+for (let i = 0; i < navItem.length; i++) {
+    navItem[i].addEventListener('click', () => {
+        if ( hamburger.classList.contains('active') && navigation.classList.contains('active') ) {
+            hamburger.classList.toggle('active');
+            navigation.classList.toggle('active'); 
+        }
+    });
+}
+
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navigation.classList.toggle('active'); 

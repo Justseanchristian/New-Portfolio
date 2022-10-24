@@ -301,12 +301,26 @@
 
     .contact-me {
         width: calc(100vw - 6rem);
+        height: min-content;
         margin: 0;
     }
 
-    .contact-name {
+    .contact-name,
+    .contact-email,
+    .contact-subject,
+    .contact-message {
         width: 95%;
         display: block;
     }
+
+    .contact-email {
+        margin: 1rem 0 1rem 0;
+    }
+
+    .send {
+        width: 100%;
+    }
+
+    
 
 }
